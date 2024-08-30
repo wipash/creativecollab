@@ -1,0 +1,107 @@
+baseURL       = "http://example.org/"
+languageCode  = "en-us"
+title         = "Creative Collab | Inspiring Young Artists"
+theme         = "roxo-hugo"
+summarylength = 25
+
+# Site Menus
+[menu]
+  # Navbar Menus
+  [[menu.nav]]
+    name    = "Home"
+    url     = ""
+    weight  = 1
+  [[menu.nav]]
+    name    = "About"
+    url     = "about"
+    weight  = 2
+  [[menu.nav]]
+    name    = "Contact us"
+    url     = "mailto:hello@creativecollab.co.nz"
+    weight  = 5
+
+# Site Params
+[params]
+  logo = "images/logo.png?1"
+  logo_footer = "images/logo.png?1"
+  favicon_icon = "images/favicon.ico"
+  favicon_shortcut_icon = "images/favicon.png"
+  custom_stylesheets = ["scss/custom.scss"]   # [ "scss/my_1.scss", "scss/my_2.scss" ]
+  dateFormat = "26 FEB 1994"
+  # Meta data
+  description = "Roxo Hugo themes | Design Agency Template by StaticMania"
+  author = "StaticMania"
+  # Google Analitycs
+  googleAnalitycsID = "Your ID"
+  # We're using formspree.io for form handling, paste your formspree url below
+  fabform  = "https://fabform.io/f/USAg2Jl"
+
+  # Contact Form
+  [params.contactForm]
+    placeholder_first_name        = "First Name"
+    placeholder_last_name         = "Last Name"
+    placeholder_email             = "Email"
+    send_message                  = "Send Message"
+
+  # Navbar Action Button
+  [params.navAction]
+    status  = true
+    name    = "Get in touch"
+    url     = "mailto:hello@creativecollab.co.nz"
+  
+
+  # Banner Section
+  [params.banner]
+    enable                = true
+    background_image      = "images/backgrounds/brightpinkbackground.png"
+    heading               = "Get creative, learn new art techniques!"
+    tagline               = "inspiring young artists"
+    primary_button        = "About"
+    primary_button_url    = "about"
+    secondary_button      = "Contact us"
+    secondary_button_url  = "mailto:hello@creativecollab.co.nz"
+
+  [params.blog]
+    read_more             = "read more"
+
+  [params.portfolio]
+    enable    = true
+    title     = "Gallery"
+    subtitle  = "We are so proud of our students' art! Take a look through our gallery to get a feel for Creative Collab projects."
+        more_works = "MORE WORKS"
+    scroll_down = "scroll down"
+
+  [params.call_to_action]
+    enable              = true
+    background_image    = "images/backgrounds/texture-cta.jpg?1"
+    title               = "Enroll now"
+    #primary_button      = "Instagram Updates"
+    #primary_button_url  = "instagram"
+    secondary_button    = "Contact us"
+    secondary_button_url = "mailto:hello@creativecollab.co.nz"
+
+  [params.footer]
+    params.footer.qr_print = false
+    # Footer Contact Info
+    [params.footer.contactInfo]
+      title   = "Contact Info"
+      email   = "hello@creativecollab.co.nz"
+      # Footer Sitemap
+      [params.footer.sitemap]
+        title   = "Sitemap"
+        [[params.footer.sitemap.link]]
+          name = "About"
+          url  = "about"
+        [[params.footer.sitemap.link]]
+          name = "Gallery"
+          url  = "/#project"
+    
+        [[params.footer.sitemap.link]]
+          name = "Contact us"
+          url  = "mailto:hello@creativecollab.co.nz "
+      # Footer Social Media
+      [params.footer.social]
+        [[params.footer.social.link]]
+          name = "Instagram"
+          url  = "#"
+

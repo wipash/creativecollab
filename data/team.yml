@@ -1,0 +1,10 @@
+enable  : true
+title   : The Creative Collab crew
+members  :
+  - image       : images/team/Tracey2.png
+    name        : Tracey Taylor
+    designation : Creative Mastermind
+
+  - image       : images/team/Katie2.png
+    name        : Katie Pearce
+    designation : AdminiSTAR!

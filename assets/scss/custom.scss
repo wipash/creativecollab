@@ -1,0 +1,57 @@
+.site-navigation{
+    .navbar-brand{
+        img{
+            max-width: 400px;
+        }
+    }
+}
+
+.site-hero-content h6 {
+    font-size: 32px;
+}
+
+.site-cta-title{
+    color: #fefefe;
+}
+
+.site-footer{
+    background-color: #fff;
+
+    .site-footer-widget-title{
+        color: #000000;
+    }
+
+    .site-footer-widget-links li a {
+        color: #000000;
+    }
+
+    .site-footer-widget-description a {
+        color: #000000;
+    }
+}
+
+.site-footer-logo a img {
+    max-width: 200px;
+}
+
+.site-project-item-content {
+    display: none;
+}
+
+.section-title h2 {
+    text-transform: none;
+}
+
+.site-cta-buttons li:not(:last-child) {
+    margin-right: 0;
+}
+
+.site-cta-buttons {
+    margin-right: 0px;
+    .btn-secondary {
+        display: none;
+    }
+}
+.site-team-member-social {
+    display: none;
+}
