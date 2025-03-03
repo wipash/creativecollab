@@ -60,6 +60,29 @@ body {
     text-decoration: underline;
 }
 
+.banner .download {
+    position: relative;
+    display: inline-block;
+}
+
+.tape-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-5deg);
+    text-align: center;
+    width: 80%;
+    font-weight: bold;
+    font-family: sans-serif;
+    color: #661457;
+}
+
+.tape-text p {
+    margin: 0;
+    line-height: 1.2;
+    font-size: 18px;
+}
+
 /* Mobile Responsive Styles */
 @media (max-width: 600px) {
     .contact {
