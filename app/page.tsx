@@ -8,8 +8,8 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-12 lg:px-20 pt-16 lg:pt-24 pb-0">
-        <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+      <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-12 lg:px-20">
+        <div className="w-full lg:w-1/2 mb-10 lg:mb-0 pt-16 lg:pt-24">
           <div className="max-w-md">
             <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
               Inspiring young artists
