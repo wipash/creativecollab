@@ -13,12 +13,13 @@ export default function Navbar() {
       <div className="max-w-6xl mx-auto px-4 md:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex items-center">
-            <Link href="/" className="flex items-center">
+            <Link href="/" className="flex items-center py-2 mt-1">
               <Image
                 src="/logo_creative_collab_small.png"
                 alt="Creative Collab"
-                width={150}
-                height={80}
+                width={130}
+                height={70}
+                className="object-contain"
               />
             </Link>
           </div>
