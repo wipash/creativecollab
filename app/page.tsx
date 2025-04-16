@@ -44,7 +44,7 @@ export default function Home() {
             <p className="text-gray-900 text-lg mb-6">
               As experienced teachers (and art enthusiasts!), we have seen the magic of art and creativity for children.
               Our focus is on building creative confidence and technical skills through quality, small group
-              instruction. Can't wait to meet you and start this artistic adventure!
+              instruction. Can&apos;t wait to meet you and start this artistic adventure!
             </p>
             <p className="text-gray-900 text-xl font-medium">Tracey Taylor & Katie Pearce</p>
           </div>
