@@ -1,5 +1,4 @@
 import Image from "next/image"
-import { Instagram } from "lucide-react"
 import Navbar from "@/components/navbar"
 import ScallopBorder from "@/components/scallop-border"
 
@@ -29,7 +28,7 @@ export default function Home() {
       </section>
 
       {/* About Section */}
-      <section className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="about" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center max-w-6xl mx-auto">
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
             <Image
@@ -53,7 +52,7 @@ export default function Home() {
       </section>
 
       {/* Features Section */}
-      <section className="py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="features" className="py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           <div className="flex flex-col items-center text-center">
@@ -134,9 +133,9 @@ export default function Home() {
       </section>
 
       {/* Upcoming Classes Section */}
-      <section className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="classes" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Upcoming Classes</h2>
-        <div className="max-w-4xl mx-auto bg-white rounded-lg overflow-hidden">
+        <div className="max-w-4xl mx-auto bg-background rounded-lg overflow-hidden">
           <Image
             src="/class_description_april.png"
             alt="April 2025 Classes"
@@ -148,7 +147,7 @@ export default function Home() {
       </section>
 
       {/* Contact Section */}
-      <section className="py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="contact" className="py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row items-start justify-between max-w-6xl mx-auto">
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
             <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-12">Contact</h2>
@@ -164,7 +163,13 @@ export default function Home() {
                 href="https://instagram.com/creativecollab.co.nz"
                 className="inline-flex items-center text-xl text-gray-700 hover:text-purple-600"
               >
-                <Instagram className="w-6 h-6 mr-2" />
+                <Image
+                  src="/instagram.svg"
+                  alt="Instagram"
+                  width={24}
+                  height={24}
+                  className="mr-2"
+                />
               </a>
             </div>
           </div>

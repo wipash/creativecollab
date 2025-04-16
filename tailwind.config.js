@@ -49,6 +49,7 @@ module.exports = {
           "creative-pink": "#FF69B4",
           "creative-orange": "#F59E0B",
           "creative-blue": "#6366F1",
+          "warm-white": "#fffbf3",
         },
         borderRadius: {
           lg: "var(--radius)",
