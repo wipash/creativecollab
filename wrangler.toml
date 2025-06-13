@@ -1,5 +1,2 @@
 name = "creativecollab"
-compatibility_date = "2025-06-13"
-
-[assets]
-directory = "./public"
+pages_build_output_dir = "./public"
