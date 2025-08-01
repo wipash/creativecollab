@@ -113,25 +113,10 @@ export default function Home() {
           </div>
         </div>
         <div className="mt-16 w-full overflow-hidden">
-          <ScallopBorder color="pink" />
+
         </div>
       </section>
-
-      {/* Gallery Section */}
-      <section className="py-16 px-4 md:px-12 lg:px-20">
-        <div className="max-w-6xl mx-auto">
-          <div className="grid grid-cols-1">
-            <Image
-              src="/4.png"
-              alt="Children's artwork gallery"
-              width={1200}
-              height={400}
-              className="w-full"
-            />
-          </div>
-        </div>
-      </section>
-
+<ScallopBorder color="orange" />
       {/* Upcoming Classes Section */}
       <section id="classes" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Upcoming Classes</h2>
