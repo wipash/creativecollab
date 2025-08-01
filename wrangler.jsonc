@@ -5,11 +5,23 @@
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"name": "creativecollab",
+	"main": ".open-next/worker.js",
 	"compatibility_date": "2025-04-16",
 	"compatibility_flags": [
 		"nodejs_compat"
 	],
-	"pages_build_output_dir": ".vercel/output/static",
+	"assets": {
+		"directory": ".open-next/assets",
+		"binding": "ASSETS"
+	},
+	"services": [
+    {
+      "binding": "WORKER_SELF_REFERENCE",
+      // The service should match the "name" of your worker
+      "service": "creativecollab",
+    },
+  ],
+	"preview_urls": true,
 	"observability": {
 		"enabled": true
 	},

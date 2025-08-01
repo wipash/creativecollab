@@ -1,11 +1,22 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Poppins } from "next/font/google"
+import localFont from 'next/font/local'
 import "./globals.css"
 
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ['400', '700']
+const poppins = localFont({
+  src: [
+    {
+      path: './fonts/Poppins-Regular.ttf',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/Poppins-Bold.ttf',
+      weight: '700',
+      style: 'normal',
+    },
+  ],
+  variable: '--font-poppins',
 })
 
 export const metadata: Metadata = {
