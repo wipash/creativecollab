@@ -16,7 +16,7 @@ interface ScallopBorderProps {
         className={`w-full h-16 ${colorClasses[color]} ${className}`}
         style={{
           maskImage: "radial-gradient(circle at center top, transparent 25px, #000 26px)",
-          maskSize: "50px 50px",
+          maskSize: "50px 70px",
           maskRepeat: "repeat-x",
           maskPosition: "top",
         }}
