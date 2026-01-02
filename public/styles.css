@@ -9,7 +9,7 @@
     --brand-strong: #75206a;
     --ink: #2b2142;
     --bg: #ffffff;
-    --radius: 14px;
+    --radius: .25rem;
 }
 
 body {
@@ -20,6 +20,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+h1 {
+    font-weight: 400;
 }
 
 .container {
@@ -113,8 +117,6 @@ body {
     padding: 14px 22px;
     border-radius: var(--radius);
     text-decoration: none;
-    font-weight: 700;
-    letter-spacing: 0.2px;
     box-shadow: 0 6px 18px rgba(111,60,200,0.25);
     transition: transform 160ms ease, box-shadow 160ms ease, background-color 160ms ease;
 }
@@ -128,6 +130,14 @@ body {
 .cta-btn:focus-visible {
     outline: 3px solid #ffb703; /* warm highlight for accessibility */
     outline-offset: 2px;
+}
+
+.newsletter {
+    margin-bottom: 48px;
+}
+
+.newsletter .inner {
+    display: none;
 }
 
 /* Mobile Responsive Styles */
@@ -146,7 +156,6 @@ body {
     .cta-btn {
         padding: 12px 20px;
         font-size: 1rem;
-        border-radius: 12px;
     }
     .contact {
         margin-top: 30px;
