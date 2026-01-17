@@ -1,4 +1,4 @@
-import Image from "next/image"
+import Image, { StaticImageData } from "next/image"
 import Navbar from "@/components/navbar"
 import ScallopBorder from "@/components/scallop-border"
 import ArtGrid from "@/components/art-grid"
@@ -10,6 +10,29 @@ import iconPurplePaletteImg from "@/public/icon_purple_palette.png"
 import iconBlueCupImg from "@/public/icon_blue_cup.png"
 import classDescriptionImg from "@/public/class_description_april.png"
 import logoSmallImg from "@/public/logo_creative_collab_small.png"
+
+const features: { icon: StaticImageData; title: string; description: string }[] = [
+  {
+    icon: iconPinkChildrenImg,
+    title: "SMALL CLASSES",
+    description: "Limited to 8-15 children per session, ensuring personal attention and space for each young artist.",
+  },
+  {
+    icon: iconOrangeTeacherImg,
+    title: "TEACHER LED",
+    description: "Our experienced teachers make sure every child feels welcome, encouraged, and ready to unleash their creativity.",
+  },
+  {
+    icon: iconPurplePaletteImg,
+    title: "QUALITY ART PROJECTS",
+    description: "Thoughtfully designed projects using high-quality art materials that encourage artistic growth and expression.",
+  },
+  {
+    icon: iconBlueCupImg,
+    title: "UNIQUE CAFE SETTING",
+    description: "Make art in the laid-back atmosphere of Cigana Café after hours.",
+  },
+]
 
 export default function Home() {
   return (
@@ -59,66 +82,21 @@ export default function Home() {
       <section id="features" className="py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Features</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
-          <div className="flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-6">
-              <Image
-                src={iconPinkChildrenImg}
-                alt="Small Classes"
-                width={96}
-                height={96}
-                placeholder="blur"
-              />
+          {features.map((feature) => (
+            <div key={feature.title} className="flex flex-col items-center text-center">
+              <div className="w-24 h-24 mb-6">
+                <Image
+                  src={feature.icon}
+                  alt={feature.title}
+                  width={96}
+                  height={96}
+                  placeholder="blur"
+                />
+              </div>
+              <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
+              <p className="text-gray-700">{feature.description}</p>
             </div>
-            <h3 className="text-xl font-bold mb-3">SMALL CLASSES</h3>
-            <p className="text-gray-700">
-              Limited to 8-15 children per session, ensuring personal attention and space for each young artist.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-6">
-              <Image
-                src={iconOrangeTeacherImg}
-                alt="Teacher Led"
-                width={96}
-                height={96}
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-xl font-bold mb-3">TEACHER LED</h3>
-            <p className="text-gray-700">
-              Our experienced teachers make sure every child feels welcome, encouraged, and ready to unleash their
-              creativity.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-6">
-              <Image
-                src={iconPurplePaletteImg}
-                alt="Quality Art Projects"
-                width={96}
-                height={96}
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-xl font-bold mb-3">QUALITY ART PROJECTS</h3>
-            <p className="text-gray-700">
-              Thoughtfully designed projects using high-quality art materials that encourage artistic growth and
-              expression.
-            </p>
-          </div>
-          <div className="flex flex-col items-center text-center">
-            <div className="w-24 h-24 mb-6">
-              <Image
-                src={iconBlueCupImg}
-                alt="Unique Cafe Setting"
-                width={96}
-                height={96}
-                placeholder="blur"
-              />
-            </div>
-            <h3 className="text-xl font-bold mb-3">UNIQUE CAFE SETTING</h3>
-            <p className="text-gray-700">Make art in the laid-back atmosphere of Cigana Café after hours.</p>
-          </div>
+          ))}
         </div>
       </section>
       <ScallopBorder color="orange" />
