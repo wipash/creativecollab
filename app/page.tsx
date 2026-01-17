@@ -3,6 +3,14 @@ import Navbar from "@/components/navbar"
 import ScallopBorder from "@/components/scallop-border"
 import ArtGrid from "@/components/art-grid"
 
+import traceyKatieImg from "@/public/tracey_katie_photo.png"
+import iconPinkChildrenImg from "@/public/icon_pink_children.png"
+import iconOrangeTeacherImg from "@/public/icon_orange_teacher.png"
+import iconPurplePaletteImg from "@/public/icon_purple_palette.png"
+import iconBlueCupImg from "@/public/icon_blue_cup.png"
+import classDescriptionImg from "@/public/class_description_april.png"
+import logoSmallImg from "@/public/logo_creative_collab_small.png"
+
 export default function Home() {
   return (
     <main className="min-h-screen">
@@ -27,11 +35,12 @@ export default function Home() {
         <div className="flex flex-col lg:flex-row items-center max-w-6xl mx-auto">
           <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
             <Image
-              src="/tracey_katie_photo.png"
+              src={traceyKatieImg}
               alt="Tracey and Katie"
               width={500}
               height={350}
               className="rounded-lg"
+              placeholder="blur"
             />
           </div>
           <div className="w-full lg:w-1/2 lg:pl-16">
@@ -53,10 +62,11 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 mb-6">
               <Image
-                src="/icon_pink_children.png"
+                src={iconPinkChildrenImg}
                 alt="Small Classes"
                 width={96}
                 height={96}
+                placeholder="blur"
               />
             </div>
             <h3 className="text-xl font-bold mb-3">SMALL CLASSES</h3>
@@ -67,10 +77,11 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 mb-6">
               <Image
-                src="/icon_orange_teacher.png"
+                src={iconOrangeTeacherImg}
                 alt="Teacher Led"
                 width={96}
                 height={96}
+                placeholder="blur"
               />
             </div>
             <h3 className="text-xl font-bold mb-3">TEACHER LED</h3>
@@ -82,10 +93,11 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 mb-6">
               <Image
-                src="/icon_purple_palette.png"
+                src={iconPurplePaletteImg}
                 alt="Quality Art Projects"
                 width={96}
                 height={96}
+                placeholder="blur"
               />
             </div>
             <h3 className="text-xl font-bold mb-3">QUALITY ART PROJECTS</h3>
@@ -97,10 +109,11 @@ export default function Home() {
           <div className="flex flex-col items-center text-center">
             <div className="w-24 h-24 mb-6">
               <Image
-                src="/icon_blue_cup.png"
+                src={iconBlueCupImg}
                 alt="Unique Cafe Setting"
                 width={96}
                 height={96}
+                placeholder="blur"
               />
             </div>
             <h3 className="text-xl font-bold mb-3">UNIQUE CAFE SETTING</h3>
@@ -117,11 +130,12 @@ export default function Home() {
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Upcoming Classes</h2>
         <div className="max-w-4xl mx-auto bg-background rounded-lg overflow-hidden">
           <Image
-            src="/class_description_april.png"
+            src={classDescriptionImg}
             alt="April 2025 Classes"
             width={1000}
             height={700}
             className="w-full"
+            placeholder="blur"
           />
         </div>
       </section>
@@ -164,11 +178,12 @@ export default function Home() {
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Image
-              src="/logo_creative_collab_small.png"
+              src={logoSmallImg}
               alt="Creative Collab"
               width={150}
               height={80}
               className="brightness-0 invert"
+              placeholder="blur"
             />
           </div>
           <div className="text-center md:text-right">
