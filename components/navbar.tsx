@@ -5,6 +5,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Menu, X } from "lucide-react"
 
+import logoSmallImg from "@/public/logo_creative_collab_small.png"
+
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
 
@@ -15,11 +17,12 @@ export default function Navbar() {
           <div className="flex items-center">
             <Link href="/" className="flex items-center py-2 mt-1">
               <Image
-                src="/logo_creative_collab_small.png"
+                src={logoSmallImg}
                 alt="Creative Collab"
                 width={130}
                 height={70}
                 className="object-contain"
+                placeholder="blur"
               />
             </Link>
           </div>
