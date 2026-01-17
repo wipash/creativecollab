@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Navbar from "@/components/navbar"
 import ScallopBorder from "@/components/scallop-border"
+import ArtGrid from "@/components/art-grid"
 
 export default function Home() {
   return (
@@ -16,14 +17,8 @@ export default function Home() {
             </h1>
           </div>
         </div>
-        <div className="w-full lg:w-1/2">
-          <Image
-            src="/header_image.png"
-            alt="Creative Collab Art Grid"
-            width={600}
-            height={600}
-            className="w-full"
-          />
+        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+          <ArtGrid />
         </div>
       </section>
 
@@ -158,14 +153,8 @@ export default function Home() {
               </a>
             </div>
           </div>
-          <div className="w-full lg:w-1/2">
-            <Image
-              src="/header_image.png"
-              alt="Creative Collab Art Grid"
-              width={600}
-              height={600}
-              className="w-full"
-            />
+          <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+            <ArtGrid />
           </div>
         </div>
       </section>
