@@ -120,11 +120,8 @@ export default function Home() {
             <p className="text-gray-700">Make art in the laid-back atmosphere of Cigana Café after hours.</p>
           </div>
         </div>
-        <div className="mt-16 w-full overflow-hidden">
-
-        </div>
       </section>
-<ScallopBorder color="orange" />
+      <ScallopBorder color="orange" />
       {/* Upcoming Classes Section */}
       <section id="classes" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Upcoming Classes</h2>
@@ -155,6 +152,8 @@ export default function Home() {
               <h3 className="text-2xl font-bold uppercase mb-4">SOCIAL</h3>
               <a
                 href="https://instagram.com/creativecollab.co.nz"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center text-xl text-gray-700 hover:text-purple-600"
               >
                 <Image
