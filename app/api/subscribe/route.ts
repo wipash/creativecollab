@@ -1,5 +1,5 @@
 export async function POST(request: Request) {
-  const { email } = await request.json()
+  const { email } = (await request.json()) as { email?: string }
 
   if (!email) {
     return new Response("Email is required", { status: 400 })
@@ -29,7 +29,9 @@ export async function POST(request: Request) {
       }
     )
 
-    const data = await response.json()
+    const data = (await response.json()) as {
+      error?: { code?: string; message?: string }
+    }
 
     if (response.ok) {
       return Response.json({ success: true })
