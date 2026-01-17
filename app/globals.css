@@ -3,12 +3,22 @@
 :root {
   --background: #fffbf3;
   --foreground: #171717;
+  --creative-purple: #5B46E8;
+  --creative-pink: #FF69B4;
+  --creative-orange: #F59E0B;
+  --creative-blue: #6366F1;
+  --warm-white: #fffbf3;
   color-scheme: light;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-creative-purple: var(--creative-purple);
+  --color-creative-pink: var(--creative-pink);
+  --color-creative-orange: var(--creative-orange);
+  --color-creative-blue: var(--creative-blue);
+  --color-warm-white: var(--warm-white);
 }
 
 body {

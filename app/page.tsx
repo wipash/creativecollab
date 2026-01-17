@@ -40,40 +40,55 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <section className="flex flex-col lg:flex-row items-center justify-between px-4 md:px-12 lg:px-20">
-        <div className="w-full lg:w-1/2 mb-10 lg:mb-0 pt-16 lg:pt-24">
-          <div className="max-w-md">
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight mb-6">
+      <section className="px-4 md:px-12 lg:px-20 pt-8 lg:pt-16">
+        <div className="flex flex-col lg:flex-row items-center justify-between">
+          <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-bold text-gray-900 leading-tight">
               Inspiring young artists
             </h1>
+            <p className="text-lg md:text-xl text-gray-600 mt-4 mb-6 max-w-md">
+              Small group art classes and school holiday workshops for kids in Auckland
+            </p>
+            <a
+              href="https://events.mcgrath.nz/events/1/creative-collab"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-block bg-creative-purple text-white font-bold text-lg px-8 py-4 rounded-full hover:bg-creative-purple/90 transition-colors shadow-lg hover:shadow-xl"
+            >
+              View upcoming classes →
+            </a>
+          </div>
+          <div className="hidden lg:flex w-1/2 justify-end">
+            <ArtGrid />
           </div>
         </div>
-        <div className="w-full lg:w-1/2 flex justify-center lg:justify-end">
+        {/* Mobile art strip */}
+        <div className="lg:hidden mt-6">
           <ArtGrid />
         </div>
       </section>
 
       {/* About Section */}
-      <section id="about" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="about" className="bg-amber-500 py-10 lg:py-24 px-4 md:px-12 lg:px-20">
         <div className="flex flex-col lg:flex-row items-center max-w-6xl mx-auto">
-          <div className="w-full lg:w-1/2 mb-10 lg:mb-0">
+          <div className="w-full lg:w-1/2 mb-6 lg:mb-0">
             <Image
               src={traceyKatieImg}
               alt="Tracey and Katie"
               width={500}
               height={350}
-              className="rounded-lg"
+              className="rounded-lg max-w-[280px] md:max-w-none mx-auto lg:mx-0"
               placeholder="blur"
             />
           </div>
-          <div className="w-full lg:w-1/2 lg:pl-16">
-            <h2 className="text-5xl md:text-6xl font-bold text-gray-900 mb-8">Hello!</h2>
-            <p className="text-gray-900 text-lg mb-6">
+          <div className="w-full lg:w-1/2 lg:pl-16 text-center lg:text-left">
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 lg:mb-8">Hello!</h2>
+            <p className="text-gray-900 text-base lg:text-lg mb-4 lg:mb-6">
               As experienced teachers (and art enthusiasts!), we have seen the magic of art and creativity for children.
               Our focus is on building creative confidence and technical skills through quality, small group
               instruction. Can&apos;t wait to meet you and start this artistic adventure!
             </p>
-            <p className="text-gray-900 text-xl font-medium">Tracey Taylor & Katie Pearce</p>
+            <p className="text-gray-900 text-lg lg:text-xl font-medium">Tracey Taylor & Katie Pearce</p>
           </div>
         </div>
       </section>
