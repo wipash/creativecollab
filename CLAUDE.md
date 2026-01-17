@@ -44,3 +44,7 @@ Components in `components/`:
 - `navbar.tsx` - Responsive nav with mobile menu (uses client-side state)
 - `art-grid.tsx` - 4x4 decorative grid with art supply images
 - `scallop-border.tsx` - Decorative section divider with CSS mask
+
+
+### Notes
+- When using the Playwright skill, make sure screenshots are less than 2000px high to avoid Claude limitations.

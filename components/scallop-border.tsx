@@ -1,5 +1,5 @@
 interface ScallopBorderProps {
-    color?: "pink" | "orange" | "purple" | "blue"
+    color?: "pink" | "orange" | "purple" | "purple-light" | "blue"
     className?: string
   }
 
@@ -7,7 +7,8 @@ interface ScallopBorderProps {
     const colorClasses = {
       pink: "bg-pink-400",
       orange: "bg-amber-500",
-      purple: "bg-purple-600",
+      purple: "bg-creative-purple",
+      "purple-light": "bg-creative-purple/10",
       blue: "bg-indigo-600",
     }
 

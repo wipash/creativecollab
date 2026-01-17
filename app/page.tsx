@@ -2,13 +2,13 @@ import Image, { StaticImageData } from "next/image"
 import Navbar from "@/components/navbar"
 import ScallopBorder from "@/components/scallop-border"
 import ArtGrid from "@/components/art-grid"
+import NewsletterForm from "@/components/newsletter-form"
 
 import traceyKatieImg from "@/public/tracey_katie_photo.png"
 import iconPinkChildrenImg from "@/public/icon_pink_children.png"
 import iconOrangeTeacherImg from "@/public/icon_orange_teacher.png"
 import iconPurplePaletteImg from "@/public/icon_purple_palette.png"
 import iconBlueCupImg from "@/public/icon_blue_cup.png"
-import classDescriptionImg from "@/public/class_description_april.png"
 import logoSmallImg from "@/public/logo_creative_collab_small.png"
 
 const features: { icon: StaticImageData; title: string; description: string }[] = [
@@ -114,19 +114,41 @@ export default function Home() {
           ))}
         </div>
       </section>
-      <ScallopBorder color="orange" />
-      {/* Upcoming Classes Section */}
+      {/* Newsletter Section */}
+      <section className="pt-16 lg:pt-20 pb-32 lg:pb-36 px-4 md:px-12 lg:px-20 bg-creative-purple/10">
+        <div className="max-w-2xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stay in the Loop</h2>
+          <p className="text-lg text-gray-600 mb-8">
+            Be the first to know about new classes, workshops, and creative adventures.
+          </p>
+          <NewsletterForm />
+        </div>
+      </section>
+
+      <ScallopBorder color="orange" className="-mt-16" />
+
+      {/* Instagram Feed Section */}
       <section id="classes" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
-        <h2 className="text-5xl md:text-6xl font-bold text-center text-gray-900 mb-16">Upcoming Classes</h2>
-        <div className="max-w-4xl mx-auto bg-background rounded-lg overflow-hidden">
-          <Image
-            src={classDescriptionImg}
-            alt="April 2025 Classes"
-            width={1000}
-            height={700}
-            className="w-full"
-            placeholder="blur"
-          />
+        <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900 mb-6">
+          See What We&apos;ve Been Creating
+        </h2>
+        <p className="text-center text-gray-800 text-lg mb-12 max-w-2xl mx-auto">
+          Follow along on Instagram for videos and photos from our latest art classes and workshops.
+        </p>
+        {/* TODO: Instagram feed integration */}
+        <div className="max-w-4xl mx-auto">
+          <div className="bg-amber-400/50 rounded-2xl p-12 text-center border-2 border-dashed border-amber-600">
+            <p className="text-amber-800 font-medium mb-4">Instagram feed coming soon</p>
+            <a
+              href="https://www.instagram.com/creativecollab.co.nz/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="inline-flex items-center gap-2 bg-white text-gray-900 font-semibold px-6 py-3 rounded-full hover:bg-gray-100 transition-colors"
+            >
+              <Image src="/instagram.svg" alt="" width={20} height={20} />
+              Follow @creativecollab.co.nz
+            </a>
+          </div>
         </div>
       </section>
 
@@ -166,7 +188,7 @@ export default function Home() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-purple-600 text-white py-8 px-4 md:px-12 lg:px-20">
+      <footer className="bg-creative-purple text-white py-8 px-4 md:px-12 lg:px-20">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row justify-between items-center">
           <div className="mb-4 md:mb-0">
             <Image
