@@ -21,13 +21,13 @@ const poppins = localFont({
 
 export const metadata: Metadata = {
   title: "Creative Collab - Inspiring Young Artists",
-  description: "Creative art classes for children in a unique cafe setting",
+  description: "Creative Collab runs teacher-led, small group art classes and school-holiday workshops for kids in Auckland",
   icons: {
     icon: "/favicon.ico",
   },
   openGraph: {
     title: "Creative Collab - Inspiring Young Artists",
-    description: "Creative art classes for children in a unique cafe setting",
+    description: "Creative Collab runs teacher-led, small group art classes and school-holiday workshops for kids in Auckland",
     url: "https://creativecollab.co.nz",
     siteName: "Creative Collab",
     locale: "en_NZ",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Creative Collab - Inspiring Young Artists",
-    description: "Creative art classes for children in a unique cafe setting",
+    description: "Creative Collab runs teacher-led, small group art classes and school-holiday workshops for kids in Auckland",
   },
 }
 
