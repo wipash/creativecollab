@@ -22,6 +22,22 @@ const poppins = localFont({
 export const metadata: Metadata = {
   title: "Creative Collab - Inspiring Young Artists",
   description: "Creative art classes for children in a unique cafe setting",
+  icons: {
+    icon: "/favicon.ico",
+  },
+  openGraph: {
+    title: "Creative Collab - Inspiring Young Artists",
+    description: "Creative art classes for children in a unique cafe setting",
+    url: "https://creativecollab.co.nz",
+    siteName: "Creative Collab",
+    locale: "en_NZ",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Creative Collab - Inspiring Young Artists",
+    description: "Creative art classes for children in a unique cafe setting",
+  },
 }
 
 export default function RootLayout({
