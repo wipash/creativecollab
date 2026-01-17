@@ -128,7 +128,7 @@ export default function Home() {
       <ScallopBorder color="orange" className="-mt-16" />
 
       {/* Instagram Feed Section */}
-      <section id="classes" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
+      <section id="gallery" className="bg-amber-500 py-16 lg:py-24 px-4 md:px-12 lg:px-20">
         <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-center text-gray-900 mb-6">
           See What We&apos;ve Been Creating
         </h2>
