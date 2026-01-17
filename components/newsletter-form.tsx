@@ -70,7 +70,7 @@ export default function NewsletterForm() {
         <p className="mt-3 text-red-600 text-center font-medium">{message}</p>
       )}
 
-      <p className="mt-4 text-sm text-gray-500 text-center">
+      <p className="mt-4 text-sm text-gray-600 text-center">
         Get updates on upcoming classes and workshops. No spam, unsubscribe anytime.
       </p>
     </div>

@@ -115,10 +115,10 @@ export default function Home() {
         </div>
       </section>
       {/* Newsletter Section */}
-      <section className="pt-16 lg:pt-20 pb-32 lg:pb-36 px-4 md:px-12 lg:px-20 bg-creative-purple/10">
+      <section className="pt-16 lg:pt-20 pb-32 lg:pb-36 px-4 md:px-12 lg:px-20 bg-creative-purple/20">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Stay in the Loop</h2>
-          <p className="text-lg text-gray-600 mb-8">
+          <p className="text-lg text-gray-700 mb-8">
             Be the first to know about new classes, workshops, and creative adventures.
           </p>
           <NewsletterForm />
