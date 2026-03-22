@@ -105,6 +105,7 @@ h1 {
 .cta {
     margin: 0 0 64px;
     display: flex;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
     gap: 16px;
