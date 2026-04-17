@@ -1,2 +1,10 @@
-name = "creativecollab"
-pages_build_output_dir = "./public"
+name = "mcgeventsoffline"
+compatibility_date = "2025-10-01"
+
+[assets]
+directory = "./public"
+not_found_handling = "single-page-application"
+
+[[routes]]
+pattern = "events.mcgrath.nz"
+custom_domain = true
